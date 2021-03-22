@@ -3,23 +3,23 @@
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>
 
-   <%= f.text_field :nickname, autofocus: true, maxlength: "6" %>
-    <%= f.label :nickname %> <em>(6文字以内)</em>
+   <%= f.label :nickname %> <em>(6文字以内)</em><br>
+   <%= f.text_field :nickname, autofocus: true, maxlength: "6" %> 
    <p></p>
+    <%= f.label :email %><br>
     <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
-    <%= f.label :email %>
     <p></p>
     <% if @minimum_password_length %>
     <%= @minimum_password_length %>
     <% end %>
-    <%= f.password_field :password, autocomplete: "new-password" %>
-    <%= f.label :password %>
+    <%= f.label :password %><br>
+    <%= f.password_field :password, autocomplete: "new-password" %><br>
+  
+    <%= f.label :password_confirmation %><br>
+    <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+   
     <p></p>
-   <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
-    <%= f.label :password_confirmation %>
-
     <%= f.submit "Sign up" %>
-
+    <%= render "devise/shared/links" %>
 <% end %>
 
-<%= render "devise/shared/links" %>
