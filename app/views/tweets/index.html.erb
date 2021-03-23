@@ -8,7 +8,9 @@
     <li>
       <%= link_to '削除', tweet_path(tweet.id), method: :delete %>
     </li>
-
-    <p>名前 <%= tweet.name %></p>
-    <p>内容 <%= tweet.text %></p>
+     <p></p>
+      <a href="/users/<%= tweet.user.id %>">
+        <span>投稿者</span><%= tweet.user.nickname %>
+      </a>
+      <p>内容 <%= tweet.text %></p>
 <% end %>
