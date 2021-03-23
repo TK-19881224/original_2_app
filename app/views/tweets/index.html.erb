@@ -1,16 +1,17 @@
-<% @tweets.each do |tweet| %>
-    <li>
-      <%= link_to '詳細', tweet_path(tweet.id), method: :get %>
-    </li>
-    <li>
-      <%= link_to '編集', edit_tweet_path(tweet.id), method: :get %>
-    </li> 
-    <li>
-      <%= link_to '削除', tweet_path(tweet.id), method: :delete %>
-    </li>
-     <p></p>
-      <a href="/users/<%= tweet.user.id %>">
-        <span>投稿者</span><%= tweet.user.nickname %>
-      </a>
-      <p>内容 <%= tweet.text %></p>
-<% end %>
+<!DO>
+   <% @tweets.each do |tweet| %>
+       <li>
+         <%= link_to '詳細', tweet_path(tweet.id), method: :get %>
+       </li>
+       <li>
+         <%= link_to '編集', edit_tweet_path(tweet.id), method: :get %>
+       </li> 
+       <li>
+         <%= link_to '削除', tweet_path(tweet.id), method: :delete %>
+       </li>
+        <p></p>
+         <a href="/users/<%= tweet.user.id %>">
+           <span>投稿者</span><%= tweet.user.nickname %>
+         </a>
+         <p>内容 <%= tweet.text %></p>
+   <% end %>
