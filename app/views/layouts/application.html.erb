@@ -10,9 +10,10 @@
   </head>
 
   <body>
-    <header>
-      <h1><a href="/">Original</a></h1>
-      <% if user_signed_in? %>
+    <header class="header wrapper">
+      <%= link_to image_tag("logo.png", class: :logo), root_path %>
+      <ul class="main-nav">
+        <% if user_signed_in? %>
             <span><%= current_user.nickname %>
             <%= link_to "マイページ", "/users/#{current_user.id}" %>
             <%= link_to "ログアウト", destroy_user_session_path, method: :delete %>
@@ -21,12 +22,13 @@
             <%= link_to "ログイン", new_user_session_path, class: "post" %>
             <%= link_to "新規登録", new_user_registration_path, class: "post" %>
         <% end %>
+      </ul>
     </header>
     <%= yield %>
     <footer>
-      <p>
+      <div class="footer copyright">
         Copyright Original 2021.
-      </p>
+      </div>
     </footer>
   </body>
 </html>

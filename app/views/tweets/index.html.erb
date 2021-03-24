@@ -1,5 +1,5 @@
-<!DO>
-   <% @tweets.each do |tweet| %>
+<div class="card">
+    <% @tweets.each do |tweet| %>
        <li>
          <%= link_to '詳細', tweet_path(tweet.id), method: :get %>
        </li>
@@ -9,10 +9,12 @@
        <li>
          <%= link_to '削除', tweet_path(tweet.id), method: :delete %>
        </li>
-        <p></p>
          <a href="/users/<%= tweet.user.id %>">
            <span>投稿者</span><%= tweet.user.nickname %>
          </a>
-         <p>タイトル <%= tweet.title %></p>
+         <div class="card__summary">
+          <p>タイトル <%= tweet.title %></p>
+         </div>
          <p>内容 <%= tweet.text %></p>
-   <% end %>
+    <% end %>
+</div>
