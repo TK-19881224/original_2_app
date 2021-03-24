@@ -1,12 +1,14 @@
-<div class="card__wrapper">
-  <div class="card__summary">
-    <% @tweets.each do |tweet| %>
-      <%= link_to '詳細', tweet_path(tweet.id), class: :nav__btn, method: :get %>
-      <%= link_to '編集', edit_tweet_path(tweet.id), class: :nav__btn, method: :get %>
-      <%= link_to '削除', tweet_path(tweet.id), class: :nav__btn, method: :delete %> <br>
-      <%= link_to "投稿者: #{tweet.user.nickname}", user_path(tweet.user.id), class: :card__user, method: :get %>    
-      <%= link_to "タイトル: #{tweet.title}", class: :card__title %><br>  
-      <%= link_to "内容: #{tweet.text}", class: :card__title %><br>
-    <% end %>
+<div class="card__summary">
+  <div class="card__wrapper">
+    <div class="card">
+      <% @tweets.each do |tweet| %>
+          <%= link_to '詳細', tweet_path(tweet.id), class: :nav__btn, method: :get %>
+          <%= link_to '編集', edit_tweet_path(tweet.id), class: :nav__btn, method: :get %>
+          <%= link_to '削除', tweet_path(tweet.id), class: :nav__btn, method: :delete %>
+          <%= link_to "投稿者: #{tweet.user.nickname}", user_path(tweet.user.id), class: :card__user, method: :get %>    
+          <%= "タイトル: #{tweet.title}" %><br>  
+          <%= "内容: #{tweet.text}" %><br>
+      <% end %>
+    </div>
   </div>
 </div>
