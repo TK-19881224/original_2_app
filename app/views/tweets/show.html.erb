@@ -1,5 +1,5 @@
 <%= link_to '編集', edit_tweet_path(@tweet.id), class: :nav__btn, class: :nav__btn, method: :get %>
 <%= link_to '削除', tweet_path(@tweet.id), class: :nav__btn, method: :delete %><br>
-<%= "タイトル: #{@tweet.title}" %><br>  
-<%= "内容: #{@tweet.text}" %><br>
+<strong><%= "タイトル: #{@tweet.title}" %></strong><br>  
+<strong><%= "内容: #{@tweet.text}" %></strong><br>
  

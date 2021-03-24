@@ -1,27 +1,15 @@
-@charset "UTF-8"
-
-html {
-  font-size: 100%;
-}
-
 body {
   line-height: 1.7;
   color: #444444;
   font-family: "MS P明朝", sans-serif;
 }
 
-li {
-  list-style: none;
-}
-
-img {
-  max-width: 100%;
-}
 
 a {
   text-decoration: none;
   color: #444444;
 }
+
 
 /* ヘッダー */
 
@@ -41,7 +29,7 @@ a {
  margin-left: 500px;
 }
 .logo {
-  width: 80px;
+  width: 40px;
 }
 .nav__btn {
   display: inline-block;
@@ -74,6 +62,21 @@ a {
 .card__summary {
   font-size: 20px;
 }
+
+.card__btn {
+  border-radius: 3px;
+  transition: 0.4s ease;
+  color: #444444;
+  border: 1px #AAAAAA solid;
+  border-radius: 3px;
+  transition: 0.4s ease;
+}
+
+.card__btn:hover {
+  color: white;	
+  background-color: #AAAAAA;
+}
+
 .card__user {
   display: block;
   font-size: 20px;

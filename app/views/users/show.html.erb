@@ -1,5 +1,5 @@
 <p><%= @nickname %>さんの投稿一覧</p>
   <% @tweets.each do |tweet| %>
-    <%= "タイトル: #{tweet.title}" %><br>  
-    <%= "内容: #{tweet.text}" %><br>
+    <strong><%= "タイトル: #{tweet.title}" %></strong><br>  
+    <strong><%= "内容: #{tweet.text}" %></strong><br>
   <% end %>
