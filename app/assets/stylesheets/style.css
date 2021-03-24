@@ -17,6 +17,7 @@ a {
   background-color: #F5F5F5;
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 .inner {
   width: 1024px;
@@ -26,10 +27,13 @@ a {
  display: inline-block;
  font-size: 1.25rem;
  text-transform: uppercase;
- margin-left: 500px;
+ margin-left: 600px;
 }
 .logo {
   width: 40px;
+  position: absolute;
+  top: 10px;
+  left: 30px;
 }
 .nav__btn {
   display: inline-block;
