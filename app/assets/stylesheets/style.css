@@ -3,9 +3,8 @@ body {
   color: #444444;
   font-family: "MS P明朝", sans-serif;
   background-image: url(bg.jpg);
-  font-family: "Arial", "メイリオ";
+  font-family: 'Lobster', cursive;
 }
-
 
 a {
   text-decoration: none;
