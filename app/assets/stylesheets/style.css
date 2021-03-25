@@ -51,7 +51,7 @@ a {
   background-color: #AAAAAA;
 }
 
-/* フォーム周り */
+/* フォーム */
 
 .form__center{
   width: 200px;
@@ -98,7 +98,7 @@ a {
 }
 
 .card {
-  width: calc((100% - 50px) / 3);
+  width: calc((100% - 50px) / 4);
   margin-bottom: 40px;
   border: 1px #AAAAAA solid;
   border-radius: 10px;
@@ -144,5 +144,5 @@ a {
 .copyright {
   text-align: center;
   color: #fff;
-  font-size: 10px;
+  font-size: 15px;
 }
