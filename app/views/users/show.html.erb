@@ -1,5 +1,17 @@
 <p><%= @nickname %>さんの投稿一覧</p>
-  <% @tweets.each do |tweet| %>
-    <strong><%= "タイトル: #{tweet.title}" %></strong><br>  
-    <strong><%= "内容: #{tweet.text}" %></strong><br>
-  <% end %>
+  <div class="card__wrapper">
+    <% @tweets.each do |tweet| %>
+      <div class="card">
+        <%= image_tag tweet.image.variant(resize: '300x300') if tweet.image.attached? %><br> 
+         <%if tweet.image.blank? %>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+         <% end %> 
+        <strong><%= "タイトル: #{tweet.title}" %></strong><br>  
+        <strong><%= "内容: #{tweet.text}" %></strong><br>
+      </div>
+    <% end %>
+  </div>

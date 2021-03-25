@@ -68,3 +68,6 @@ group :development, :test do
   gem 'capistrano-rails'
   gem 'capistrano3-unicorn'
 end
+
+gem 'mini_magick'
+gem 'image_processing', '~> 1.2'

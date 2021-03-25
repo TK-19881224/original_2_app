@@ -3,6 +3,14 @@
   <%= link_to '編集', edit_tweet_path(tweet.id), class: :card__btn, method: :get %>
   <%= link_to '削除', tweet_path(tweet.id), class: :card__btn, method: :delete %>
   <%= link_to "投稿者: #{tweet.user.nickname}", user_path(tweet.user.id), class: :card__user, method: :get %>    
+  <%= image_tag tweet.image.variant(resize: '300x300') if tweet.image.attached? %><br>
+   <%if tweet.image.blank? %>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+   <% end %> 
   <%= "タイトル: #{tweet.title}" %><br>  
   <%= "内容: #{tweet.text}" %>
 </div>
