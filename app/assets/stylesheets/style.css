@@ -2,7 +2,8 @@ body {
   line-height: 1.7;
   color: #444444;
   font-family: "MS P明朝", sans-serif;
-  background-image: url(bg.jpg)  ;
+  background-image: url(bg.jpg);
+  font-family: "Arial", "メイリオ";
 }
 
 
