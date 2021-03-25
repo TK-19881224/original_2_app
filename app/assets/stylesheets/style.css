@@ -2,6 +2,7 @@ body {
   line-height: 1.7;
   color: #444444;
   font-family: "MS P明朝", sans-serif;
+  background-image: url(bg.jpg)  ;
 }
 
 
@@ -14,7 +15,6 @@ a {
 /* ヘッダー */
 
 .header {
-  background-color: #F5F5F5;
   display: flex;
   justify-content: space-between;
   position: relative;
