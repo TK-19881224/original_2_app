@@ -1,6 +1,6 @@
-<%= link_to '編集', edit_tweet_path(@tweet.id), class: :nav__btn, class: :nav__btn, method: :get %>
-<%= link_to '削除', tweet_path(@tweet.id), class: :nav__btn, method: :delete %><br>
+<%= link_to 'Edit', edit_tweet_path(@tweet.id), class: :nav__btn, class: :nav__btn, method: :get %>
+<%= link_to 'Delete', tweet_path(@tweet.id), class: :nav__btn, method: :delete %><br>
 <%= image_tag @tweet.image.variant(resize: '500x500') if @tweet.image.attached? %><br> 
-<strong><%= "タイトル: #{@tweet.title}" %></strong><br>  
-<strong><%= "内容: #{@tweet.text}" %></strong><br>
+<strong><%= "Title: #{@tweet.title}" %></strong><br>  
+<strong><%= "Diary: #{@tweet.text}" %></strong><br>
  

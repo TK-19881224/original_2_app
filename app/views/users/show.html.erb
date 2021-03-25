@@ -1,4 +1,4 @@
-<p><%= @nickname %>さんの投稿一覧</p>
+<p><%= @nickname %>Postlist</p>
   <div class="card__wrapper">
     <% @tweets.each do |tweet| %>
       <div class="card">
@@ -10,8 +10,8 @@
           <br>
           <br>
          <% end %> 
-        <strong><%= "タイトル: #{tweet.title}" %></strong><br>  
-        <strong><%= "内容: #{tweet.text}" %></strong><br>
+        <strong><%= "Title: #{tweet.title}" %></strong><br>  
+        <strong><%= "Dialy: #{tweet.text}" %></strong><br>
       </div>
     <% end %>
   </div>
