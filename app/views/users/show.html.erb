@@ -1,4 +1,5 @@
-<p><%= @nickname %>Postlist</p>
+ <p><%= @nickname %>Postlist</p>
+ <%= link_to "Back", href="/", class: :card__user %>
   <div class="card__wrapper">
     <% @tweets.each do |tweet| %>
       <div class="card">

@@ -1,5 +1,5 @@
 <div class="card">
-  <%= link_to 'Details', tweet_path(tweet.id), class: :card__btn, method: :get %>
+  <%= link_to 'show', tweet_path(tweet.id), class: :card__btn, method: :get %>
   <%= link_to 'Edit', edit_tweet_path(tweet.id), class: :card__btn, method: :get %>
   <%= link_to 'Delete', tweet_path(tweet.id), class: :card__btn, method: :delete %>
   <%= link_to "Name: #{tweet.user.nickname}", user_path(tweet.user.id), class: :card__user, method: :get %>    
