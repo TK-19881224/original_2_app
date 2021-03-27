@@ -149,6 +149,10 @@ a {
   color: #AAAAAA;
 }
 
+.card__image {
+  right: 5px;
+}
+
 
 /* フッター */
 

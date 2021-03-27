@@ -3,4 +3,14 @@
 <%= image_tag @tweet.image.variant(resize: '500x500') if @tweet.image.attached? %><br> 
 <strong><%= "Title: #{@tweet.title}" %></strong><br>  
 <strong><%= "Diary: #{@tweet.text}" %></strong><br>
+<h3>comment</h3>
+<%= form_with model: @tweeet do |f| %>
+  <%= f.text_field :text %>
+  <%= f.submit '送信' %>
+<% end %>
+<div id='messages'>
+  <% @tweets.reverse_each do |tweet| %>
+    <p><%= tweet.text %></p>
+  <% end %>
+</div>
  

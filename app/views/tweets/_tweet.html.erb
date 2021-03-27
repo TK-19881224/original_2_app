@@ -2,15 +2,7 @@
   <%= link_to 'show', tweet_path(tweet.id), class: :card__btn, method: :get %>
   <%= link_to 'Edit', edit_tweet_path(tweet.id), class: :card__btn, method: :get %>
   <%= link_to 'Delete', tweet_path(tweet.id), class: :card__btn, method: :delete %>
-  <%= link_to "Name: #{tweet.user.nickname}", user_path(tweet.user.id), class: :card__user, method: :get %>    
-  <%= image_tag tweet.image.variant(resize: '300x300') if tweet.image.attached? %><br>
-   <%if tweet.image.blank? %>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-   <% end %> 
-  <%= "Title: #{tweet.title}" %><br>  
-  <%= "Dialy: #{tweet.text}" %>
+  <%= link_to "Name: #{tweet.user.nickname}", user_path(tweet.user.id), class: :card__user, method: :get %> 
+  <%= "Title: #{tweet.title}" %><br>     
+  <%= image_tag tweet.image.variant(resize: '300x300')if tweet.image.attached? %>
 </div>
