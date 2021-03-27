@@ -11,8 +11,14 @@
 
   <body>
     <header class="header">
-      <div class="inner">
-        <%= link_to image_tag("logo.png", class: :logo), root_path %>
+      <div class="inner"> 
+      <%= link_to image_tag("logo.png", class: :logo), root_path %>
+        <div class="search">
+          <%= form_with(url: search_tweets_path, local: true, method: :get, class: "search-form") do |form| %>
+              <%= form.text_field :keyword, placeholder: "Post search", class: "search-input" %>
+              <%= form.submit "Search", class: "search-btn" %>
+          <% end %>
+        </div>  
         <ul class="nav">
           <% if user_signed_in? %>
               <%= current_user.nickname %>

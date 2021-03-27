@@ -1,5 +1,6 @@
 class TweetsController < ApplicationController
   before_action :set_tweet, only: [:edit, :show]
+  before_action :move_to_index, except: [:index, :show, :search]
   PER = 8
 
   def index
@@ -31,6 +32,10 @@ class TweetsController < ApplicationController
   def show
     @comment = Comment.new
     @comments = @tweet.comments.includes(:user)
+  end
+
+  def search
+    @tweets = Tweet.search(params[:keyword])
   end
 
   private
