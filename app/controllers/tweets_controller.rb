@@ -4,7 +4,7 @@ class TweetsController < ApplicationController
 
   def index
     @tweets = Tweet.includes(:user).order("created_at DESC") #N+1問題を解消
-    @tweets = Tweet.page(params[:page]).per(PER)
+    @pages = Tweet.page(params[:page]).per(PER)
   end
 
   def new
