@@ -1,8 +1,19 @@
 body {
   line-height: 1.7;
   color: #444444;
+  font-family: 'Lobster', cursive,'Shippori Mincho', serif;;
   background-image: url(bg.jpg);
-  font-family: 'Lobster', cursive;
+}
+
+body::before{
+  content: '';
+  background: inherit;
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+  position: absolute;
 }
 
 a {
@@ -82,7 +93,7 @@ a {
   user-select: none;
   background: #888888;
   border: 1px #DDDDDD solid;
-  border-radius: 10px;
+  border-radius: 5px;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 2px 0 rgba(0, 0, 0, 0.12);
   transition: 0.2s ease;
 }
