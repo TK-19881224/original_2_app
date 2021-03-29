@@ -8,8 +8,11 @@ https://gyazo.com/78cba2a4698e7d008afe4c73dd798358
 https://original-2-app.herokuapp.com/
 ## 利用方法
 ○一覧画面から新規登録・ログイン
+
 ○一覧画面へ戻る
+
 ○新規投稿は右上Postをクリック
+
 投稿完了後は一覧画面へ戻る
 ## 課題解決
 |       ストーリーから考える課題           |              課題解決              | 
