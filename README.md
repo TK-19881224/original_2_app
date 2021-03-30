@@ -10,6 +10,7 @@
 https://original-2-app.herokuapp.com/
 ## 💻利用方法
 * 一覧画面から新規登録・ログイン
+
 * 一覧画面へ戻る
 * 新規投稿は右上Postをクリック
 * 投稿完了後は一覧画面へ戻る
@@ -39,11 +40,6 @@ https://original-2-app.herokuapp.com/
 * JavaScript
 * gem
 * heroku
-## コメント機能
-
-## 画像投稿機能
-
-## ローカルでの動作確認
 
 
 
