@@ -11,7 +11,7 @@ https://original-2-app.herokuapp.com/
 ## 💻利用方法
 * 一覧画面から新規登録・ログイン
 
-url[https://gyazo.com/590a27474ec3220d680056787a3952b8]
+<img src="新規登録.gif" width="400">
 * 一覧画面へ戻る
 * 新規投稿は右上Postをクリック
 * 投稿完了後は一覧画面へ戻る
