@@ -11,7 +11,7 @@ https://original-2-app.herokuapp.com/
 ## 💻利用方法
 * 一覧画面から新規登録・ログイン
 
-![1WfDBAKZjBdAWIJCUlgE1617082290-1617082297](https://user-images.githubusercontent.com/78133385/112938538-c1da5300-9164-11eb-8e4a-75c196a90388.gif)
+![IqvxqMIqCefBrK43Nwf11617082514-1617082522](https://user-images.githubusercontent.com/78133385/112938805-52b12e80-9165-11eb-8c36-e0bbe40b651d.gif)
 * 一覧画面へ戻る
 * 新規投稿は右上Postをクリック
 * 投稿完了後は一覧画面へ戻る
