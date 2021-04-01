@@ -4,5 +4,7 @@
   <%= link_to 'Delete', tweet_path(tweet.id), class: :card__btn, method: :delete %>
   <%= link_to "Name: #{tweet.user.nickname}", user_path(tweet.user.id), class: :card__user, method: :get %> 
   <%= "Title: #{tweet.title}" %><br>     
-  <%= image_tag tweet.image.variant(resize: '300x300')if tweet.image.attached? %>
+    <% tweet.images.each do |image| %>
+      <%= image_tag image, class:'images' %>
+    <% end %>
 </div>
