@@ -8,5 +8,8 @@
       <p><%= form.text_area :text, placeholder: "Diary", rows: "3" %></p>
       <p><%= form.submit "SEND", class: :form__btn %></p>
     <% end %>
+    <% @tweet.images.each do |image| %>
+      <%= image_tag image, class: 'images' %>
+    <% end %>
   </div>
 </div>
