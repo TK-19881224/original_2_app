@@ -1,6 +1,8 @@
 <%= link_to 'Edit', edit_tweet_path(@tweet.id), class: :nav__btn, class: :nav__btn, method: :get %>
 <%= link_to 'Delete', tweet_path(@tweet.id), class: :nav__btn, method: :delete %><br>
-<%= image_tag @tweet.image.variant(resize: '500x500') if @tweet.image.attached? %><br>
+<% @tweet.images.each do |image| %>
+  <%= image_tag image.variant(resize: '500x500'), class:'images' %><br>
+<% end %>
 <%= @tweet.updated_at.strftime('%Y/%m/%d %H:%M:%S') %><br>
 <strong><%= "Title: #{@tweet.title}" %></strong><br>  
 <strong><%= "Diary: #{@tweet.text}" %></strong><br>

@@ -1,7 +1,7 @@
 <div class="card__summary">
   <div class="card__wrapper">
     <% @tweets.each do |tweet| %>
-          <%= render partial: "tweets/tweet", locals: { tweet: tweet } %>
+      <%= render partial: "tweets/tweet", locals: { tweet: tweet } %>
     <% end %>
   </div>
   <%= paginate @pages %>
