@@ -5,6 +5,6 @@
   <%= link_to "Name: #{tweet.user.nickname}", user_path(tweet.user.id), class: :card__user, method: :get %> 
   <%= "Title: #{tweet.title}" %><br>     
   <% tweet.images.first(1).each do |image| %>
-    <%= image_tag image.variant(resize: '300x300'), class: "tweet-img" if tweet.image.attached?%>
+    <%= image_tag image.variant(resize: '300x300'), class: "tweet-img" %>
   <% end %>
 </div>
