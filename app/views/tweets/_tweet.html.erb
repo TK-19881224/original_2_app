@@ -1,8 +1,8 @@
 <div class="card">
   <%= link_to 'show', tweet_path(tweet.id), class: :card__btn, method: :get %>
   <%= link_to 'Edit', edit_tweet_path(tweet.id), class: :card__btn, method: :get %>
-  <%= link_to 'Delete', tweet_path(tweet.id), class: :card__btn, method: :delete %>
-  <%= link_to "Name: #{tweet.user.nickname}", user_path(tweet.user.id), class: :card__user, method: :get %> 
+  <%= link_to 'Delete', tweet_path(tweet.id), class: :card__btn, method: :delete %><br>
+  <%= link_to "Name: #{tweet.user.nickname}", class: :card__user, method: :get %><br> 
   <%= "Title: #{tweet.title}" %><br>     
   <% tweet.images.first(1).each do |image| %>
     <%= image_tag image.variant(resize: '300x300'), class: "tweet-img" %>
