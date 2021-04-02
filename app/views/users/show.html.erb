@@ -3,7 +3,9 @@
   <div class="card__wrapper">
     <% @tweets.each do |tweet| %>
       <div class="card">
-        <%= image_tag tweet.image.variant(resize: '300x300') if tweet.image.attached? %><br> 
+        <% tweet.images.first(1).each do |image| %>
+         <%= image_tag image.variant(resize: '300x300'), class: "tweet-img" %><br>
+        <% end %>
         <%= tweet.updated_at.strftime('%Y/%m/%d %H:%M:%S') %><br> 
         <strong><%= "Title: #{tweet.title}" %></strong><br>  
         <strong><%= "Dialy: #{tweet.text}" %></strong><br>
