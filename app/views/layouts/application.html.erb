@@ -13,10 +13,6 @@
     <header class="header">
       <div class="inner">
         <%= link_to image_tag("logo.png", class: :logo), root_path %>
-        <%= form_with(url: search_tweets_path, local: true, method: :get, class: "search-form") do |form| %>
-          <%= form.text_field :keyword, placeholder: "Title", class: "search-input" %>
-          <%= form.submit "Search", class: "search-btn" %>
-        <% end %>
         <ul class="nav">
           <% if user_signed_in? %>
               <%= current_user.nickname %>
@@ -27,8 +23,13 @@
               <%= link_to "Login", new_user_session_path, class: :nav__btn %>
               <%= link_to "Sign up", new_user_registration_path, class: :nav__btn %>
           <% end %>
+          <%= form_with(url: search_tweets_path, local: true, method: :get, class: "search-form") do |form| %>
+            <%= form.text_field :keyword, placeholder: "Title", class: "search-input" %>
+            <%= form.submit "Search", class: "nav__btn" %>
+          <% end %>
         </ul>
       </div>
+      
     </header>
     <%= yield %>
     <footer>
