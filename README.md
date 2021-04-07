@@ -42,7 +42,7 @@ https://original-2-app.herokuapp.com/
 * VScode
 * Ruby
 * Rails
-* mysql2
+* mysql
 * JavaScript
 * gem
 * heroku
