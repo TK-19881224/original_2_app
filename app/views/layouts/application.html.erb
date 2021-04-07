@@ -16,12 +16,12 @@
         <ul class="nav">
           <% if user_signed_in? %>
               <%= current_user.nickname %>
+              <%= link_to "Post", new_tweet_path, class: :nav__btn %>
               <%= link_to "Mypage", "/users/#{current_user.id}", class: :nav__btn %>
               <%= link_to "Logout", destroy_user_session_path, class: :nav__btn, method: :delete %>
-              <%= link_to "Post", new_tweet_path, class: :nav__btn %>
           <% else %>
               <%= link_to "Login", new_user_session_path, class: :nav__btn %>
-              <%= link_to "Sign up", new_user_registration_path, class: :nav__btn %>
+              <%= link_to "Signup", new_user_registration_path, class: :nav__btn %>
           <% end %>
         </ul>
           <%= form_with(url: search_tweets_path, local: true, method: :get, class: "search-form") do |form| %>
