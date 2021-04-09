@@ -1,14 +1,14 @@
 <div class="form__center">
   <div class="form__wrapper">
+    <% @tweet.images.each do |image| %>
+      <%= image_tag image.variant(resize: '300x300'), class: 'images' %>
+    <% end %>
     <%= form_with(model: @tweet, local: true) do |form| %>
     <div id="image-list"></div>
       <%= form.file_field :images, name: 'tweet[images][]', id: 'tweet_image' %><br>
       <p><%= form.text_field :title, placeholder: "Title" %></p>
       <p><%= form.text_area :text, placeholder: "Diary", rows: "3" %></p>
       <p><%= form.submit "SEND", class: :form__btn %></p>
-    <% end %>
-    <% @tweet.images.each do |image| %>
-      <%= image_tag image.variant(resize: '300x300'), class: 'images' %>
     <% end %>
   </div>
 </div>
