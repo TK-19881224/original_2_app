@@ -116,6 +116,21 @@ textarea {
 
 /* メイン */
 
+
+ 
+@keyframes slideIn {
+  0% {
+    transform: translateX(180px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+  }
+  40%,100% {
+    opacity: 1;
+  }
+}
+
 .card__wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -130,6 +145,7 @@ textarea {
   border-radius: 10px;
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.14), 0 3px 3px 0 rgba(0, 0, 0, 0.20);
   margin-top: 10px;
+  animation: slideIn 1s cubic-bezier(0.25, 1, 0.5, 1) 1 forwards;
 }
 
 .card__summary {
