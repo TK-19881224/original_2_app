@@ -10,7 +10,7 @@
   <div class="container">
       <% if user_signed_in? %>
         <%= form_with(model: [@tweet, @comment], local: true) do |form| %>
-          <%= form.text_area :text, placeholder: "comment", rows: "2" %>
+          <%= form.text_area :text, placeholder: "comment", rows: "1" %>
           <%= form.submit "SEND",class: :card__btn %>
         <% end %>
       <% else %>
