@@ -171,7 +171,6 @@ textarea {
 }
 
 .card__btn {
-  border-radius: 3px;
   transition: 0.4s ease;
   color: #444444;
   border: 1px #AAAAAA solid;
