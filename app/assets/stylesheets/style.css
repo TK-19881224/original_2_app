@@ -175,7 +175,7 @@ textarea {
   color: #444444;
   border: 1px #AAAAAA solid;
   border-radius: 5px;
-  transition: 0.4s ease;
+
 }
 
 .card__btn:hover {
@@ -183,15 +183,15 @@ textarea {
   background-color: #AAAAAA;
 }
 
-.card__user {
+/* .card__user {
   display: block;
   font-size: 20px;
   color: #444444;
-  text-decoration: underline;
+  transition: 0.2s ease;
 }
 .card__user:hover {
-  color: #AAAAAA;
-}
+color: #AAAAAA;
+} */
 
 .card__image {
   right: 5px;
